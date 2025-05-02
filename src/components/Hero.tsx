@@ -13,28 +13,6 @@ export default function Hero() {
     '/images/ASCII (7).png',
     '/images/ASCII (8).png',
     '/images/ASCII (9).png',
-    '/images/ASCII (10).png',
-    '/images/ASCII (11).png',
-    '/images/ASCII (12).png',
-    '/images/ASCII (13).png',
-    '/images/ASCII (14).png',
-    '/images/ASCII (15).png',
-    '/images/ASCII (16).png',
-    '/images/ASCII (17).png',
-    '/images/ASCII (18).png',
-    '/images/ASCII (19).png',
-    '/images/ASCII (20).png',
-    '/images/ASCII (21).png',
-    '/images/ASCII (22).png',
-    '/images/ASCII (23).png',
-    '/images/ASCII (24).png',
-    '/images/ASCII (25).png',
-    '/images/ASCII (26).png',
-    '/images/ASCII (27).png',
-    '/images/ASCII (28).png',
-    '/images/ASCII (29).png',
-    '/images/ASCII (30).png',
-    '/images/ASCII (31).png'
   ];
 
   useEffect(() => {
