@@ -1,63 +1,24 @@
+---
+import { ideas, tutorials } from "../data/resources.ts"
+---
+
 <div class="min-h-screen max-w-lg flex flex-col gap-4 items-start justify-start tracking-widest  uppercase font-bold mx-auto p-6 mt-12">
   <h2 class="text-4xl font-bold uppercase text-center w-full mb-12">Resources</h2>
   <p>Ideas</p>
   <ul class="list-disc pl-6 space-y-6 mb-12">
-    <li class="cursor-pointer underline">
-      <a target="_blank" rel="noreferrer" href="https://whitep4nth3r.com/blog/what-is-jamstack/">What is Jamstack?</a>
-    </li>
-    <li class="cursor-pointer underline">
-      <a target="_blank" rel="noreferrer" href="https://jamstack.org/why-jamstack/">Why Jamstack?</a>
-    </li>
-    <li class="cursor-pointer underline">
-      <a target="_blank" rel="noreferrer" href="https://orbiter.host/blog/the-static-website-manifesto">The Static Website Manifesto</a>
-    </li>
-    <li class="cursor-pointer underline">
-      <a target="_blank" rel="noreferrer" href="https://snipcart.com/blog/jamstack">Jamstack: Why and How to Get Started</a>
-    </li>
-    <li class="cursor-pointer underline">
-      <a target="_blank" rel="noreferrer" href="https://orbiter.host/blog/a-case-for-local-builds">A Case for Local Builds</a>
-    </li>
-    <li class="cursor-pointer underline">
-      <a target="_blank" rel="noreferrer" href="https://remotesynthesis.com/blog/goodbye-jamstack/">Is Jamstack Finished?</a>
-    </li>
-    <li class="cursor-pointer underline">
-      <a target="_blank" rel="noreferrer" href="https://orbiter.host/blog/the-open-web-and-what-it-actually-means">The Open Web and What it Actually Means</a>
-    </li>
-    <li class="cursor-pointer underline">
-      <a target="_blank" rel="noreferrer" href="https://whitep4nth3r.com/blog/the-future-of-jamstack-is-anti-capitalist/">The Future of Jamstack is Anti-Capitalist</a>
-    </li>
-    <li class="cursor-pointer underline">
-      <a target="_blank" rel="noreferrer" href="https://youtube.com/shorts/i4tDJfKmy4w">Jamstack and Mobile Apps</a>
-    </li>
-    <li class="cursor-pointer underline">
-      <a target="_blank" rel="noreferrer" href="https://youtube.com/shorts/umN9nWjbh-U">Let's not rewrite websites</a>
-    </li>
-    <li class="cursor-pointer underline">
-      <a target="_blank" rel="noreferrer" href="https://orbiter.host/blog/stop-paying-for-build-minutes">Stop Paying for Build Minutes</a>
-    </li>
-    <li class="cursor-pointer underline">
-      <a target="_blank" rel="noreferrer" href="https://orbiter.host/blog/the-web-was-meant-for-surfing-not-scrolling">The Web Was Meant for Surfing not Scrolling</a>
-    </li>
-
+    {ideas.map((idea) => (
+      <li class="cursor-pointer underline">
+        <a target="_blank" rel="noreferrer" href={idea.url}>{idea.title}</a>
+      </li>
+    ))}
   </ul>
 
   <p>Tutorials</p>
   <ul class="list-disc pl-6 space-y-6">
-    <li class="cursor-pointer underline">
-      <a target="_blank" rel="noreferrer" href="https://orbiter.host/blog/how-to-convert-your-wordpress-site-into-a-static-site">How to Convert Your Wordpress Site into a Static Site</a>
-    </li>
-    <li class="cursor-pointer underline">
-      <a target="_blank" rel="noreferrer" href="https://orbiter.host/blog/how-to-build-and-host-an-11ty-site">How to Build and Host an 11ty Site</a>
-    </li>
-    <li class="cursor-pointer underline">
-      <a target="_blank" rel="noreferrer" href="https://orbiter.host/blog/how-to-host-a-react-site">How to Host a React Site</a>
-    </li>
-    <li class="cursor-pointer underline">
-      <a target="_blank" rel="noreferrer" href="https://orbiter.host/blog/how-to-host-an-astro-site">How to Host an Astro Site</a>
-    </li>
-    <li class="cursor-pointer underline">
-      <a target="_blank" rel="noreferrer" href="https://orbiter.host/blog/how-to-build-and-host-a-hugo-site">How to Build and Host a Hugo Site</a>
-    </li>
+    {tutorials.map((tutorial) => (
+      <li class="cursor-pointer underline">
+        <a target="_blank" rel="noreferrer" href={tutorial.url}>{tutorial.title}</a>
+      </li>
+    ))}
   </ul>
-
 </div>
