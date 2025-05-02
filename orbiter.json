@@ -1,0 +1,6 @@
+{
+  "siteId": "714e0581-53c2-44d5-b39e-7af02ff42b98",
+  "domain": "andromeda",
+  "buildCommand": "bun run build",
+  "buildDir": "dist"
+}
