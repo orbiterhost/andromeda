@@ -71,3 +71,14 @@ export const tutorials = [
     url: "https://orbiter.host/blog/how-to-build-and-host-a-hugo-site"
   }
 ];
+
+export const tools = [
+  {
+    title: "Orbiter CLI",
+    url: "https://docs.orbiter.host/quickstart"
+  },
+  {
+   title: "bhvr",
+   url: "https://bhvr.dev"
+  }
+]

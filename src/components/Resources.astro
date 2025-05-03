@@ -1,5 +1,5 @@
 ---
-import { ideas, tutorials } from "../data/resources.ts"
+import { ideas, tutorials, tools } from "../data/resources.ts"
 ---
 
 <div class="min-h-screen max-w-lg flex flex-col gap-4 items-start justify-start tracking-widest  uppercase font-bold mx-auto p-6 mt-12">
@@ -14,10 +14,19 @@ import { ideas, tutorials } from "../data/resources.ts"
   </ul>
 
   <p>Tutorials</p>
-  <ul class="list-disc pl-6 space-y-6">
+  <ul class="list-disc pl-6 space-y-6 mb-12">
     {tutorials.map((tutorial) => (
       <li class="cursor-pointer underline">
         <a target="_blank" rel="noreferrer" href={tutorial.url}>{tutorial.title}</a>
+      </li>
+    ))}
+  </ul>
+
+  <p>Tools</p>
+  <ul class="list-disc pl-6 space-y-6">
+    {tools.map((tool) => (
+      <li class="cursor-pointer underline">
+        <a target="_blank" rel="noreferrer" href={tool.url}>{tool.title}</a>
       </li>
     ))}
   </ul>

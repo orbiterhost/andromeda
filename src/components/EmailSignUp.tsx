@@ -181,14 +181,13 @@ export default function EmailSignUp() {
             <input
               type="text"
               name="email"
+              className="tracking-widest uppercase font-bold"
               placeholder={formStyles.placeholderText}
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               required={true}
               style={{
                 color: formStyles.formFontColor,
-                fontFamily: `'${formStyles.formFont}', sans-serif`,
-                fontSize: `${formStyles.formFontSizePx}px`,
                 margin: isInline ? "0px 10px 0px 0px" : "0px 0px 10px",
                 width: "100%",
                 maxWidth: "300px",
