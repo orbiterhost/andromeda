@@ -50,7 +50,7 @@ export default function Hero() {
   }, [activeImageIndex]);
 
   return (
-    <section className="w-full h-screen bg-black overflow-hidden flex justify-center items-center">
+    <section className="w-full h-screen bg-black overflow-hidden flex justify-center items-center fade-in">
       <div ref={imageContainerRef} className="relative w-full h-full">
         <h1 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-5xl md:text-5xl sm:text-3xl xs:text-2xl font-bold uppercase tracking-widest text-center w-[90%] z-10 drop-shadow-[0_0_10px_rgba(255,255,255,0.7)]">
           ANDROMEDA

@@ -1,0 +1,17 @@
+{
+  "accountAssociation": {
+    "header": "eyJmaWQiOjYwMjMsInR5cGUiOiJjdXN0b2R5Iiwia2V5IjoiMHg0NTYxMzExNjFmODNDN0Q3ZkRBMTViMzJhNWY3QzIxRkQ0RTI3RTk2In0",
+    "payload": "eyJkb21haW4iOiJhbmRyb21lZGEuYnVpbGQifQ",
+    "signature": "MHhmMTQ1YWMzZjVhNmIzZjA0NTc3Y2IzMzI1YzExODNkNDJhOTZhMjAxZGZiZjU3ZTgzNWY2MTM5MWIzYzE1MWQwNzBlNmRkMjVlMDUzOWE0MWExMGVmNzU5MGUyZDM1MzkxM2YyMzM1MWY3YjJiODRhZDM4N2FhYTE5MjA1M2YyZTFi"
+  },
+  "frame": {
+    "version": "1",
+    "name": "ANDROMEDA",
+    "iconUrl": "https://andromeda.build/icon.png",
+    "homeUrl": "https://andromeda.build",
+    "imageUrl": "https://andromeda.build/image.png",
+    "buttonTitle": "OPEN THE WEB",
+    "splashImageUrl": "https://andromeda.build/splash.png",
+    "splashBackgroundColor": "#000000"
+  }
+}

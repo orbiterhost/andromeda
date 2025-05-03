@@ -1,9 +1,29 @@
+---
+const fcData = JSON.stringify({
+  version: "next",
+  imageUrl: "https://andromeda.build/image.png",
+  button: {
+    title: "OPEN THE WEB",
+    action: {
+      type: "launch_frame",
+      name: "OPEN THE WEB",
+      url: "https://andromeda.build",
+      splashImageUrl: "https://andromeda.build/splash.png",
+      splashBackgroundColor: "#000000"
+    }
+  }
+})
+---
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#000000" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Andromeda</title>
     <meta name="description" content="Bring back the open web">
@@ -20,6 +40,8 @@
     <meta name="twitter:title" content="Andromeda">
     <meta name="twitter:description" content="Bring back the open web">
     <meta name="twitter:image" content="/og.png">
+
+    <meta name="fc:frame" content={fcData} />
 
     <link rel="preload" as="image" href="/images/ASCII (3).png">
     <link rel="preload" as="image" href="/images/ASCII (4).png">

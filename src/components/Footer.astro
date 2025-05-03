@@ -1,0 +1,14 @@
+<div class="w-full h-[200px] flex items-center justify-center mt-12 tracking-widest  uppercase font-bold">
+ <a target="_blank" href="https://orbiter.host">Made by Orbiter</a>
+</div>
+
+<script type="module">
+    import { sdk } from 'https://esm.sh/@farcaster/frame-sdk';
+    window.onload = async () => {
+      try {
+        await sdk.actions.ready();
+      } catch (error) {
+        console.error(error);
+      }
+    };
+</script>
