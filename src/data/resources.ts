@@ -1,3 +1,5 @@
+import { transitionEnabledOnThisPage } from "astro/virtual-modules/transitions-router.js";
+
 export const ideas = [
   {
     title: "What is Jamstack?",
@@ -74,11 +76,31 @@ export const tutorials = [
 
 export const tools = [
   {
-    title: "Orbiter CLI",
-    url: "https://docs.orbiter.host/quickstart"
+    title: "Neocities",
+    url: "https://neocities.org"
+  },
+  {
+    title: "Orbiter",
+    url: "https://orbiter.host"
+  },
+  {
+    title: "Hugo",
+    url: "https://gohugo.io"
+  },
+  {
+    title: "11ty",
+    url: "https://www.11ty.dev"
   },
   {
    title: "bhvr",
    url: "https://bhvr.dev"
-  }
+  },
+  {
+    title: "Astro",
+    url: "https://astro.build"
+  },
+  {
+    title: "Orbiter CLI",
+    url: "https://docs.orbiter.host/quickstart"
+  },
 ]
