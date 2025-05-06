@@ -148,7 +148,7 @@ export default function EmailSignUp() {
           }}
         >
           <p
-            className="tracking-widest  uppercase font-bold text-center mt-12 p-6"
+            className="tracking-widest   font-bold text-center mt-12 p-6"
             style={{
               color: formStyles.successFontColor,
             }}
@@ -167,7 +167,7 @@ export default function EmailSignUp() {
     default:
       return (
         <>
-          <p className="tracking-widest  uppercase font-bold text-center mt-12 p-6">Sign up for the Andromeda Newsletter</p>
+          <p className="tracking-widest   font-bold text-center mt-12 p-6">Sign up for the Andromeda Newsletter</p>
           <form
             onSubmit={handleSubmit}
             style={{
@@ -181,7 +181,7 @@ export default function EmailSignUp() {
             <input
               type="text"
               name="email"
-              className="tracking-widest uppercase font-bold"
+              className="tracking-widest  font-bold"
               placeholder={formStyles.placeholderText}
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -258,7 +258,7 @@ export default function EmailSignUp() {
   function SignUpFormButton({ props }: any) {
     return (
       <button
-        className="tracking-widest uppercase font-bold"
+        className="tracking-widest  font-bold"
         type="submit"
         style={{
           background: formStyles.buttonColor,
